@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Task Page";
+}
+
+@if (ViewBag.Status == "1")
+{
+  <div>
+    Ranking is in progress...
+  </div>
+}
+else
+{
+  <div>
+      <div>ID: @ViewBag.Id</div>
+      <div>Text: @ViewBag.Text</div>
+      <div>Description: @ViewBag.Description</div>
+      <div>Rank: @ViewBag.Rank</div>
+  </div>
+}
